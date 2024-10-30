@@ -14,7 +14,6 @@ def get_words():
     print(count)
 
 def count_characters(file_path):
-    # Initialize counts for each letter to zero
     count_a = 0
     count_b = 0
     count_c = 0
@@ -42,11 +41,9 @@ def count_characters(file_path):
     count_y = 0
     count_z = 0
 
-    # Open the file and read its contents
     with open(file_path, 'r') as f:
-        text = f.read().upper()  # Read and convert to uppercase
+        text = f.read().upper()
 
-    # Count occurrences of each letter
     for char in text:
         if char == 'A':
             count_a += 1
@@ -101,7 +98,6 @@ def count_characters(file_path):
         elif char == 'Z':
             count_z += 1
 
-    # Print the results
     print(f"A: {count_a}")
     print(f"B: {count_b}")
     print(f"C: {count_c}")
